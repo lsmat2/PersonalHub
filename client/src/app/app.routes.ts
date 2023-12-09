@@ -18,10 +18,6 @@ export const routes: Routes = [
         loadComponent: () => import('./news/news.component').then(mod => mod.NewsComponent)
     },
     {
-        path: 'discord',
-        loadComponent: () => import('./discord/discord.component').then(mod => mod.DiscordComponent)
-    },
-    {
         path: 'games',
         loadComponent: () => import('./games/games.component').then(mod => mod.GamesComponent)
     },

@@ -20,11 +20,6 @@ export const apps = [
         icon: 'fa-newspaper'
     },
     {
-        name: 'Discord',
-        routerLink: '/discord',
-        icon: 'fa-brands fa-discord'
-    },
-    {
         name: 'Games',
         routerLink: '/games',
         icon: 'fa-gamepad'
