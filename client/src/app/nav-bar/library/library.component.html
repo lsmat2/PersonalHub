@@ -1,0 +1,20 @@
+<div id="{{ id }}" class="modal fade" tabindex="-1">
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title">Library View</h1>
+        <button class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <div class="row row-cols-auto justify-content-center g-4">
+          <div class="col" *ngFor="let app of apps">
+            <a class="btn btn-secondary btn-lg p-3" [routerLink]="[ app.routerLink ]" data-bs-dismiss="modal">
+              <i class="fa-solid {{ app.icon }} fa-2xl"></i>
+              <p class="m-1">{{ app.name }}</p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

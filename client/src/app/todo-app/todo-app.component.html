@@ -1,0 +1,58 @@
+<div class="container-fluid h-100">
+  <!-- Input field for adding new tasks with Bootstrap styling -->
+  <h2 style="font-size: 20px;">Add Tasks</h2>
+  <div class="input-group mb-3">
+    <input type="text" [(ngModel)]="newTaskContent" placeholder="Enter new task" class="form-control" />
+    <button (click)="addTask(newTaskContent)" class="btn btn-success">
+      <i class="fas fa-plus"></i> <!-- Plus icon for adding tasks -->
+    </button>
+  </div>
+
+  <!-- Displaying tasks with Bootstrap styling -->
+  <ul class="list-group">
+    <li *ngFor="let task of tasks" class="list-group-item d-flex justify-content-between align-items-center">
+      <!-- Display task content -->
+      <span>{{task.content}}</span>
+
+      <div>
+        <!-- Icon for editing -->
+        <button (click)="editTask(task)" class="btn btn-primary btn-sm me-2">
+          <i class="fas fa-edit"></i> <!-- Edit icon -->
+        </button>
+
+        <!-- Icon for deleting -->
+        <button (click)="deleteTask(task.id)" class="btn btn-danger btn-sm me-2">
+          <i class="fas fa-minus-circle"></i> <!-- Minus circle icon for deleting -->
+        </button>
+
+        <!-- Icon for completing -->
+        <button (click)="completeTask(task.id)" class="btn btn-warning btn-sm">
+          <i class="fas fa-check-circle"></i> <!-- Check circle icon for completing -->
+        </button>
+      </div>
+
+    </li>
+  </ul>
+
+
+  <!-- Section to display completed tasks -->
+<div class="mt-5 mb-3 text-center"></div>
+<h2 style="font-size: 20px;">Completed Tasks</h2>
+<ul class="list-group">
+    <li *ngFor="let task of completedTasks" 
+        class="list-group-item d-flex justify-content-between align-items-center">
+        <span>{{task.content}}</span>
+        <button (click)="uncompleteTask(task.id)" class="btn btn-warning btn-sm">
+            <i class="fas fa-undo"></i>  <!-- Icon to uncomplete the task -->
+        </button>
+    </li>
+</ul>
+
+    <!-- Icon for clearing all tasks -->
+    <div class="mt-5 mb-3 text-center">
+        <button (click)="clearAllTasks()" class="btn btn-danger">
+          <i class="fas fa-trash-alt"></i> Clear All Tasks <!-- Trash bin icon for clearing all tasks -->
+        </button>
+      </div>
+
+</div>

@@ -1,0 +1,22 @@
+<!-- Widget Formatting -->
+
+<div *ngIf="weatherData.isDay" id = "weatherWidgetDay">
+  <div class="weatherRow">
+    <i class="fas fa-3x fa-sun sun"> </i>
+  </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> {{weatherData.tempCurr}}°F </div>
+  <div class="weatherRow" stlye="font-size: 12px;"> {{weatherData.tempMax}}°F ↑ {{weatherData.tempMin}}°F ↓ </div>
+  <div class="weatherRow" stlye="font-size: 25px; margin-top: 10px;"> {{weatherData.name}} </div>
+  <div class="weatherRow" stlye="font-size: 12px;"> RealFeel: {{weatherData.tempFeelsLike}}°F </div>
+</div>
+
+
+<div *ngIf="!weatherData.isDay" id = "weatherWidgetNight">
+  <div class="weatherRow">
+    <i class="fas fa-3x fa-moon moon"> </i>
+  </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> {{weatherData.tempCurr}}°F </div>
+  <div class="weatherRow" stlye="font-size: 12px;"> {{weatherData.tempMin}}°F ↑ {{weatherData.tempMax}}°F ↓ </div>
+  <div class="weatherRow" stlye="font-size: 25px; margin-top: 10px;"> {{weatherData.name}} </div>
+  <div class="weatherRow" stlye="font-size: 12px;"> RealFeel: {{weatherData.tempFeelsLike}}°F </div>
+</div>

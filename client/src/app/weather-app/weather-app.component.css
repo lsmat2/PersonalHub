@@ -1,0 +1,56 @@
+/* Formatting of weather application, subject to change for visual purpose */
+
+#weatherAppDay{
+  position:relative;
+  padding:0;
+  margin:0;
+  top: 2.5%;
+  left: 3%;
+  width: 96%;
+  height: 95%;
+  overflow: auto;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(80,200,250,1) 0%, rgba(120,215,250,1) 75%, rgb(255, 255, 255) 100%);
+  color: black;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#weatherAppNight{
+  position:relative;
+  padding:0;
+  margin:0;
+  top: 2.5%;
+  left: 3%;
+  width: 96%;
+  height: 95%;
+  overflow: auto;
+
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(8,7,42,1) 75%, rgb(8, 10, 63) 100%);
+  color: white;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.weatherRow{
+  display: block;
+  margin:0 auto;
+  width: fit-content;
+}
+
+.sun{
+  margin: 10px;
+  color: yellow;
+  filter: drop-shadow( 1px 1px 2px yellow);
+}
+
+.moon{
+  margin: 10px;
+  color: white;
+  filter: drop-shadow( 1px 1px 2px white);
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 40px;
+}

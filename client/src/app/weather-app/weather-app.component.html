@@ -1,0 +1,66 @@
+<!-- Application Formatting -->
+
+<div *ngIf="weatherData.isDay" id = "weatherAppDay">
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+  <div class="weatherRow" stlye="font-size: 25px; margin-top: 10px;"> {{weatherData.name}} </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow">
+    <i class="fas fa-3x fa-sun sun"> </i>
+  </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> {{weatherData.tempCurr}}°F </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> RealFeel: {{weatherData.tempFeelsLike}}°F </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> {{weatherData.tempMax}}°F ↑ <span class="tab"></span> {{weatherData.tempMin}}°F ↓</div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> Humidity: {{weatherData.humidity}}% </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> Wind: {{weatherData.windSpeed}} mph @ {{weatherData.direction}} </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> Clouds: {{weatherData.clouds}}% </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> Visibility: {{weatherData.sight}} miles </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+</div>
+
+
+<div *ngIf="!weatherData.isDay" id = "weatherAppNight">
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+  <div class="weatherRow" stlye="font-size: 25px; margin-top: 10px;"> {{weatherData.name}} </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow">
+    <i class="fas fa-3x fa-moon moon"> </i>
+  </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> {{weatherData.tempCurr}}°F </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> RealFeel: {{weatherData.tempFeelsLike}}°F </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> {{weatherData.tempMax}}°F ↑ <span class="tab"></span> {{weatherData.tempMin}}°F ↓</div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> Humidity: {{weatherData.humidity}}% </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> Wind: {{weatherData.windSpeed}} mph @ {{weatherData.direction}} </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> Clouds: {{weatherData.clouds}}% </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+
+  <div class="weatherRow" stlye="font-size: 12px;"> Visibility: {{weatherData.sight}} miles </div>
+  <div class="weatherRow" stlye="font-size: 32px; margin-top: 5px;"> <span class="tab"></span> </div>
+</div>

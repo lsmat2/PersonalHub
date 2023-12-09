@@ -1,0 +1,26 @@
+<div id="navBarFixer">
+
+<nav class="navbar flex-column bg-body-tertiary p-4 rounded">
+  <div class="navbar-nav gap-4">
+    <a class="btn btn-secondary btn-lg p-3" [routerLink]="['/weather']">
+      <i class="fa-solid fa-cloud-sun fa-2xl"></i>
+      <p class="m-1">Weather</p>
+    </a>
+    <a class="btn btn-secondary btn-lg p-3" [routerLink]="['/todo']">
+      <i class="fa-solid fa-square-check fa-2xl"></i>
+      <p class="m-1">Todo List</p>
+    </a>
+    <a class="btn btn-secondary btn-lg p-3" [routerLink]="['/']">
+      <i class="fa-solid fa-house fa-2xl"></i>
+      <p class="m-1">Home</p>
+    </a>
+
+    <button class="btn btn-secondary btn-lg p-3" type="button" data-bs-toggle="modal" data-bs-target="#libraryModal">
+      <i class="fa-solid fa-layer-group fa-2xl"></i>
+      <p class="m-1">Library</p>
+    </button>
+  </div>
+</nav>
+
+</div>
+<library-modal [id]="'libraryModal'" />
