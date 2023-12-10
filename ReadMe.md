@@ -14,7 +14,7 @@ A personalizable web application to help you with daily tasks. Provides basic in
 
 ## Motivation
 
-The motivation behind this project was to create a customizable Amazon Echo Show. Alongside some of the functionality of the Echo Show, besides the voice assistent part, the Personal Hub allows you to customize and add your own components as you see fit.
+The motivation behind this project was to create a non-physical web application to provide the same information and 'personal assistant' feel as, say, an Amazon Echo. Unlike a physical device, our personal hub is integrated as a web application and is portable to your tablet or computer providing the same 'all in one' feel where you can check the current time, weather, or news, organize a task list, receive discord messages, or simply play games.
 
 ## Technical Architecture
 
@@ -52,11 +52,11 @@ Server: `node app.js`
 
 Client: `ng serve -o`
 
-## Group Members
+## Contributors
 
-| Memeber         | NetID   | Role                                                         |
-| :-------------: | :-----: | :----------------------------------------------------------- |
-| Rayaan Ahmad    | rahma4  | Developed components for the client                          |
-| Drew Mink       | armink2 | Setup the framework and developed the nav bar and the server |
-| Leo Smat        | lsmat2  | Developed components for the client                          |
-| Mia Erdenebileg | merden2 | Developed components for the client                          |
+| Memeber         | Role                                                         |
+| :-------------: | :----------------------------------------------------------- |
+| Leo Smat        | Developed news, weather and clock components for the client  |
+| Rayaan Ahmad    | Developed news, weather and clock components for the client  |
+| Drew Mink       | Setup framework and developed nav bar and server components  |
+| Mia Erdenebileg | Developed todo list component for the client                 |
