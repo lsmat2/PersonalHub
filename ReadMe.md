@@ -20,11 +20,11 @@ The motivation behind this project was to create a customizable Amazon Echo Show
 
 ### Diagram:
 
-![Diagram](docs/TechArch.jpg)
+![Diagram](/client/src/assets/diagrams/TechArch.jpg)
 
 ### Layout:
 
-![Layout](docs/Layout.jpg)
+![Layout](/client/src/assets/diagrams/Layout.jpg)
 
 ### Descriptions
 
